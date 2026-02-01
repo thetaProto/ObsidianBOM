@@ -1,0 +1,53 @@
+{
+  "quickadd:choice:9922f29b-f83f-4906-ab3c-8342cf20dc63": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Q"
+    }
+  ],
+  "quickadd:choice:c0ca1114-5084-4a7e-a4fa-1acd2c754df7": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Q"
+    }
+  ],
+  "quickadd:choice:70e60d03-b5ce-4066-bbb6-d800da8cd193": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "Q"
+    }
+  ],
+  "templater-obsidian:create-templates/commands/rename_drawing.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ],
+  "quickadd:choice:924ab361-8de1-4516-aac4-4a6f41d9c1e0": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ],
+  "quickadd:choice:f971a642-10ca-4a43-8f84-709996b45002": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ]
+}

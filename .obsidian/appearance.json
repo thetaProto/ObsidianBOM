@@ -1,0 +1,8 @@
+{
+  "interfaceFontFamily": "Meiryo UI",
+  "textFontFamily": "Meiryo UI",
+  "baseFontSizeAction": false,
+  "enabledCssSnippets": [
+    "bom-sharts"
+  ]
+}

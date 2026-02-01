@@ -1,0 +1,85 @@
+/* callout: bomcharts を横並びコンテナにする */
+.callout[data-callout="bomcharts"] > .callout-content {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* 狭い画面で縦に落ちる */
+  }
+  
+
+  /* Charts が吐く要素（あなたのHTMLでは block-language-chart）を2カラム化 */
+  .callout[data-callout="bomcharts"] > .callout-content > .block-language-chart {
+    flex: 1 1 360px;
+    max-width: calc(50% - 12px);
+    margin: 0 !important;         /* inlineの margin:auto を潰す */
+    width: auto !important;       /* inlineの width:100% を潰す */
+  }
+  
+  /* canvas が親の幅にフィットするように */
+  .callout[data-callout="bomcharts"] > .callout-content > .block-language-chart > canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* 狭い画面は縦並び */
+  @media (max-width: 900px) {
+    .callout[data-callout="bomcharts"] > .callout-content > .block-language-chart {
+      max-width: 100%;
+    }
+  }
+  
+  /* bomcharts callout の背景・枠・影を完全に消す */
+.callout[data-callout="bomcharts"] {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* タイトル行の背景も消す */
+.callout[data-callout="bomcharts"] > .callout-title {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* 中身の背景を消す */
+.callout[data-callout="bomcharts"] > .callout-content {
+  background: transparent !important;
+  padding: 0 !important;     /* 余白を消してグラフを詰める */
+}
+
+/* ===== 高さは枠で揃えるが、canvasは引き伸ばさない ===== */
+.callout[data-callout="bomcharts"] > .callout-content > .block-language-chart {
+    height: 420px;              /* 揃えたい高さ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    width: auto !important;
+  }
+  
+  /* canvasは最大サイズだけ指定（拡大しすぎてボケるのを防ぐ） */
+  .callout[data-callout="bomcharts"] > .callout-content > .block-language-chart > canvas {
+    max-height: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;    /* ←ここが重要：伸ばさない */
+    width: auto !important;     /* ←ここが重要：伸ばさない */
+  }
+
+  /* bomcharts: 左（1つ目=円）だけを小さくする */
+.callout[data-callout="bomcharts"] > .callout-content > .block-language-chart:first-child {
+    flex: 0 0 360px;      /* 円の列幅を固定（好みで調整） */
+    max-width: 360px;
+  }
+  
+  /* 円グラフのcanvasを列幅にフィットさせる（引き伸ばしはしない） */
+  .callout[data-callout="bomcharts"] > .callout-content > .block-language-chart:first-child > canvas {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* 右（2つ目=棒）は残り幅を全部使う */
+.callout[data-callout="bomcharts"] > .callout-content > .block-language-chart:nth-child(2) {
+    flex: 1 1 520px;
+    max-width: none;
+  }
+  

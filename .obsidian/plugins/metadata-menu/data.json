@@ -1,0 +1,223 @@
+{
+  "presetFields": [
+    {
+      "type": "Media",
+      "tagName": "file",
+      "icon": "paperclip",
+      "tooltip": "Accepts a link to a media file",
+      "colorClass": "file",
+      "options": {
+        "embed": false,
+        "folders": [
+          null,
+          "BOM/assets/thumbnail"
+        ],
+        "display": "list",
+        "thumbnailSize": "50"
+      },
+      "name": "thumbnail",
+      "id": "3l8Ksa",
+      "path": ""
+    },
+    {
+      "type": "File",
+      "tagName": "file",
+      "icon": "link",
+      "tooltip": "Accepts an internal link",
+      "colorClass": "file",
+      "options": {
+        "dvQueryString": "dv.pages('\"BOM/parts\"')"
+      },
+      "name": "part",
+      "id": "BkLu59",
+      "path": "",
+      "command": {
+        "id": "insert__BkLu59",
+        "icon": "list-plus",
+        "label": "Insert part field"
+      },
+      "style": {
+        "code": false
+      }
+    },
+    {
+      "type": "Input",
+      "tagName": "single",
+      "icon": "pencil",
+      "tooltip": "Accepts any value",
+      "colorClass": "single",
+      "options": {
+        "template": "M-{{数値(4桁)}}"
+      },
+      "name": "material_no",
+      "id": "FGzeHg",
+      "path": ""
+    },
+    {
+      "type": "Input",
+      "tagName": "single",
+      "icon": "pencil",
+      "tooltip": "Accepts any value",
+      "colorClass": "single",
+      "options": {
+        "template": "PR-{{数値(3桁)}}"
+      },
+      "name": "product_no",
+      "id": "LQBrJP",
+      "path": ""
+    },
+    {
+      "type": "Input",
+      "tagName": "single",
+      "icon": "pencil",
+      "tooltip": "Accepts any value",
+      "colorClass": "single",
+      "options": {
+        "template": "P-{{数値(4桁)}}"
+      },
+      "name": "part_no",
+      "id": "QE6bB3",
+      "path": ""
+    },
+    {
+      "type": "File",
+      "tagName": "file",
+      "icon": "link",
+      "tooltip": "Accepts an internal link",
+      "colorClass": "file",
+      "options": {
+        "dvQueryString": "dv.pages('\"BOM/products\"')"
+      },
+      "name": "product",
+      "id": "RRLo66",
+      "path": ""
+    },
+    {
+      "type": "Media",
+      "tagName": "file",
+      "icon": "paperclip",
+      "tooltip": "Accepts a link to a media file",
+      "colorClass": "file",
+      "options": {
+        "embed": false,
+        "folders": [
+          null,
+          "BOM/laser_preset"
+        ],
+        "display": "list",
+        "thumbnailSize": "25"
+      },
+      "name": "laser_preset",
+      "id": "XIEvuq",
+      "path": ""
+    },
+    {
+      "tagName": "file",
+      "icon": "link",
+      "colorClass": "file",
+      "type": "File",
+      "tooltip": "Accepts an internal link",
+      "options": {
+        "dvQueryString": "dv.pages('\"BOM/materials\"')"
+      },
+      "name": "material",
+      "id": "dUd4YW",
+      "path": ""
+    },
+    {
+      "type": "Input",
+      "tagName": "single",
+      "icon": "pencil",
+      "tooltip": "Accepts any value",
+      "colorClass": "single",
+      "options": {
+        "template": "DW-{{数値(4桁)}}"
+      },
+      "name": "drawing_no",
+      "id": "j4z0pt",
+      "path": ""
+    },
+    {
+      "type": "Media",
+      "tagName": "file",
+      "icon": "paperclip",
+      "tooltip": "Accepts a link to a media file",
+      "colorClass": "file",
+      "options": {
+        "embed": false,
+        "folders": [
+          null,
+          "BOM/assets/drawings"
+        ],
+        "display": "list",
+        "thumbnailSize": "100"
+      },
+      "name": "svg",
+      "id": "p4N3kS",
+      "path": ""
+    },
+    {
+      "type": "Select",
+      "tagName": "select",
+      "icon": "right-triangle",
+      "tooltip": "Accepts a single value from a list",
+      "colorClass": "select",
+      "options": {
+        "sourceType": "ValuesList",
+        "valuesList": {
+          "1": "draft",
+          "2": "released",
+          "3": "obsolete"
+        }
+      },
+      "name": "status",
+      "id": "tB5Tdh",
+      "path": ""
+    },
+    {
+      "type": "File",
+      "tagName": "file",
+      "icon": "link",
+      "tooltip": "Accepts an internal link",
+      "colorClass": "file",
+      "options": {
+        "dvQueryString": "dv.pages('\"BOM/drawings\"')"
+      },
+      "name": "drawing",
+      "id": "uLvgAt",
+      "path": ""
+    }
+  ],
+  "fileClassQueries": [],
+  "displayFieldsInContextMenu": true,
+  "globallyIgnoredFields": [],
+  "classFilesPath": null,
+  "isAutosuggestEnabled": true,
+  "fileClassAlias": "fileClass",
+  "settingsVersion": "5.38",
+  "firstDayOfWeek": 1,
+  "enableLinks": true,
+  "enableTabHeader": true,
+  "enableEditor": true,
+  "enableBacklinks": true,
+  "enableStarred": true,
+  "enableFileExplorer": true,
+  "enableSearch": true,
+  "enableProperties": true,
+  "tableViewMaxRecords": 20,
+  "frontmatterListDisplay": "asArray",
+  "fileClassExcludedFolders": [],
+  "showIndexingStatusInStatusBar": true,
+  "fileIndexingExcludedFolders": [],
+  "fileIndexingExcludedExtensions": [
+    ".excalidraw.md"
+  ],
+  "fileIndexingExcludedRegex": [],
+  "frontmatterOnly": false,
+  "showFileClassSelectInModal": true,
+  "chooseFileClassAtFileCreation": false,
+  "autoInsertFieldsAtFileClassInsertion": false,
+  "fileClassIcon": "package",
+  "isAutoCalculationEnabled": true,
+  "disableDataviewPrompt": false
+}

@@ -1,0 +1,60 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "scripts",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "BOM/parts",
+      "template": "templates/part_template.md"
+    },
+    {
+      "folder": "BOM/drawings",
+      "template": "templates/drawing_template.md"
+    },
+    {
+      "folder": "BOM/products",
+      "template": "templates/product_template.md"
+    },
+    {
+      "folder": "BOM/views",
+      "template": "templates/bom_view_template.md"
+    },
+    {
+      "folder": "BOM/materials",
+      "template": "templates/material_template.md"
+    },
+    {
+      "folder": "BOM/purchases",
+      "template": "templates/purchase_template.md"
+    },
+    {
+      "folder": "BOM/cut_plans",
+      "template": "templates/cut_plan_template.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [],
+  "startup_templates": [
+    ""
+  ],
+  "intellisense_render": 1
+}
